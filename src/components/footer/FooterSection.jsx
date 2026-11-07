@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeartHandshake, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { HeartHandshake, Mail, MapPin, ExternalLink, Github } from 'lucide-react';
 import { FOOTER_CONTENT, NAV_LINKS, SITE_META } from '../../data/siteContent';
 import styles from './FooterSection.module.css';
 
@@ -63,6 +63,20 @@ export default function FooterSection() {
                 <MapPin size={15} />
                 <span>{FOOTER_CONTENT.contact.location}</span>
               </p>
+              {SITE_META.githubRepos.map((repo) => (
+                <a
+                  key={repo.url}
+                  href={repo.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.contactLinkItem}
+                >
+                  <Github size={15} />
+                  <span>
+                    {repo.label}: {repo.shortName}
+                  </span>
+                </a>
+              ))}
               <a
                 href={SITE_META.liveAppUrl}
                 target="_blank"

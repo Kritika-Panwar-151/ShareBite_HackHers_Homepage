@@ -12,6 +12,18 @@ export const SITE_META = {
   tagline: 'Bridging Surplus Food from Donors to People in Need',
   liveAppUrl: 'https://sharebitecodehers.vercel.app/',
   demoVideoUrl: '/SHAREBITE.mp4',
+  githubRepos: [
+    {
+      label: 'Homepage GitHub',
+      shortName: 'ShareBite_HackHers_Homepage',
+      url: 'https://github.com/Kritika-Panwar-151/ShareBite_HackHers_Homepage.git',
+    },
+    {
+      label: 'Mobile App GitHub',
+      shortName: 'ShareBite_CodeHers',
+      url: 'https://github.com/Kritika-Panwar-151/ShareBite_CodeHers.git',
+    },
+  ],
 };
 
 export const DEMO_ACCOUNTS = {

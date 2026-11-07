@@ -7,6 +7,7 @@ import {
   Users,
   Bike,
   Smartphone,
+  Github,
 } from 'lucide-react';
 import { DEMO_ACCOUNTS, SITE_META } from '../../data/siteContent';
 import styles from './LiveAppCtaSection.module.css';
@@ -89,6 +90,25 @@ export default function LiveAppCtaSection() {
                   {copiedKey === 'vercel-url' ? <Check size={14} /> : <Copy size={14} />}
                   <span>{copiedKey === 'vercel-url' ? 'Link Copied!' : 'Copy Link'}</span>
                 </button>
+              </div>
+
+              {/* GitHub Repository Links */}
+              <div className={styles.githubLinksRow}>
+                {SITE_META.githubRepos.map((repo) => (
+                  <a
+                    key={repo.url}
+                    href={repo.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.githubChip}
+                  >
+                    <Github size={15} />
+                    <span>
+                      <strong>{repo.label}:</strong> {repo.shortName}
+                    </span>
+                    <ExternalLink size={13} />
+                  </a>
+                ))}
               </div>
             </div>
 

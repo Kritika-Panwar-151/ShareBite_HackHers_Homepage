@@ -106,6 +106,20 @@
   color: rgba(244, 239, 230, 0.82);
 }
 
+.contactLinkItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: #fde68a;
+  transition: opacity 0.2s ease;
+}
+
+.contactLinkItem:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
 .appLink {
   margin-top: 6px;
   align-self: flex-start;
