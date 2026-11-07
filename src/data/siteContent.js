@@ -306,9 +306,6 @@ export const FOOTER_CONTENT = {
     emails: ['kritikapanwar.cs24@bmsce.ac.in'],
     location: 'B.M.S. College of Engineering, Bengaluru, Karnataka',
   },
-  team: [
-    'Jayam Shanmukha Shivanvitha',
-    'Kappalabanda Keerthi',
-    'Kritika Panwar',
-  ],
+  teamName: 'Team CodeHers',
+  team: ['Kritika Panwar', 'Jayam Shanmukha Shivanvitha'],
 };

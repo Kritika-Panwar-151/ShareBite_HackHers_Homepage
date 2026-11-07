@@ -80,7 +80,7 @@ export default function FooterSection() {
               Hearts.
             </span>
             <span className={styles.teamCredits}>
-              Crafted by {FOOTER_CONTENT.team.join(' • ')}
+              Crafted by {FOOTER_CONTENT.teamName} • {FOOTER_CONTENT.team.join(' & ')}
             </span>
           </div>
         </div>
