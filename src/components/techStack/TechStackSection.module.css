@@ -1,0 +1,113 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0 115px;
+}
+
+.headerCard {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  text-align: center;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand-terracotta);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: clamp(1.85rem, 3vw, 2.45rem);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.techCard {
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: 24px 22px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accent_emerald {
+  border-top: 4px solid var(--brand-emerald);
+}
+
+.accent_terracotta {
+  border-top: 4px solid var(--brand-terracotta);
+}
+
+.accent_amber {
+  border-top: 4px solid var(--brand-amber);
+}
+
+.accent_cocoa {
+  border-top: 4px solid var(--brand-cocoa);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.iconWrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--bg-cream);
+  color: var(--brand-emerald-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryTag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-cream);
+  color: var(--text-secondary);
+}
+
+.techName {
+  font-size: 1.24rem;
+}
+
+.techDesc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.58;
+}
+
+@media (max-width: 920px) {
+  .techGrid {
+    grid-template-columns: 1fr;
+  }
+}

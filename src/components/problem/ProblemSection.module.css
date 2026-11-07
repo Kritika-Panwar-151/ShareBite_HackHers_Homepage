@@ -1,0 +1,133 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0 115px;
+}
+
+.headerCard {
+  max-width: 780px;
+  margin: 0 auto 28px;
+  text-align: center;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand-terracotta);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: clamp(1.85rem, 3.2vw, 2.55rem);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.statCard {
+  padding: 26px 24px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--surface-border);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.tone_terracotta {
+  border-top: 5px solid var(--brand-terracotta);
+}
+
+.tone_amber {
+  border-top: 5px solid var(--brand-amber);
+}
+
+.tone_emerald {
+  border-top: 5px solid var(--brand-emerald);
+}
+
+.statTop {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.statUnit {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.painGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.painCard {
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.painIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--brand-terracotta-soft);
+  color: var(--brand-terracotta-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.painCard h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.painCard p {
+  font-size: 0.89rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 920px) {
+  .statsGrid,
+  .painGrid {
+    grid-template-columns: 1fr;
+  }
+}

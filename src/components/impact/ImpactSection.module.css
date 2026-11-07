@@ -1,0 +1,128 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0 115px;
+}
+
+.headerCard {
+  max-width: 780px;
+  margin: 0 auto 28px;
+  text-align: center;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.projectedPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  background: var(--brand-amber-soft);
+  color: #92400e;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.metricCard {
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metricTag {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--bg-cream);
+  color: var(--text-secondary);
+}
+
+.numberRow {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--brand-emerald-dark);
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+.metricLabel {
+  font-size: 1.08rem;
+}
+
+.metricSub {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.progressTrack {
+  margin-top: 10px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--bg-cream-soft);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fill_emerald {
+  background: var(--brand-emerald);
+}
+
+.fill_terracotta {
+  background: var(--brand-terracotta);
+}
+
+.fill_amber {
+  background: var(--brand-amber);
+}
+
+@media (max-width: 1000px) {
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+}

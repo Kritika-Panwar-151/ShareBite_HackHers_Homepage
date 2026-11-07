@@ -1,0 +1,147 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 42px;
+}
+
+.footerCard {
+  background: #212623;
+  color: #f4efe6;
+  border-radius: var(--radius-lg);
+  padding: 40px 38px 26px;
+  box-shadow: var(--shadow-elevated);
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.75fr 1fr;
+  gap: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.logoMark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--brand-emerald);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.mission {
+  font-size: 0.9rem;
+  color: rgba(244, 239, 230, 0.78);
+  margin-bottom: 16px;
+  max-width: 440px;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.techChip {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #fde68a;
+}
+
+.linksCol h4,
+.contactCol h4 {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.linksCol ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.linksCol a {
+  font-size: 0.88rem;
+  color: rgba(244, 239, 230, 0.78);
+  transition: color 0.2s ease;
+}
+
+.linksCol a:hover {
+  color: #fde68a;
+}
+
+.contactCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: rgba(244, 239, 230, 0.82);
+}
+
+.appLink {
+  margin-top: 6px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--brand-terracotta);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.bottomBar {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: rgba(244, 239, 230, 0.65);
+}
+
+.teamCredits {
+  color: rgba(244, 239, 230, 0.85);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .topGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .footerCard {
+    padding: 30px 22px 22px;
+  }
+}

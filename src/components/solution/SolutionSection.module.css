@@ -1,0 +1,144 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0 115px;
+}
+
+.headerCard {
+  max-width: 780px;
+  margin: 0 auto 28px;
+  text-align: center;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand-emerald);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: clamp(1.85rem, 3.2vw, 2.55rem);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.pillarCard {
+  position: relative;
+  padding: 28px 26px;
+  border-radius: var(--radius-md);
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.border_emerald {
+  border-top: 5px solid var(--brand-emerald);
+}
+
+.border_terracotta {
+  border-top: 5px solid var(--brand-terracotta);
+}
+
+.border_amber {
+  border-top: 5px solid var(--brand-amber);
+}
+
+.iconRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.iconBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg_emerald {
+  background: var(--brand-emerald-soft);
+  color: var(--brand-emerald-dark);
+}
+
+.bg_terracotta {
+  background: var(--brand-terracotta-soft);
+  color: var(--brand-terracotta-dark);
+}
+
+.bg_amber {
+  background: var(--brand-amber-soft);
+  color: #92400e;
+}
+
+.pillarTag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-cream);
+  color: var(--text-secondary);
+}
+
+.pillarCard h3 {
+  font-size: 1.32rem;
+}
+
+.pillarCard p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.connectorArrow {
+  position: absolute;
+  right: -23px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--brand-emerald);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(20, 116, 82, 0.28);
+  z-index: 3;
+}
+
+@media (max-width: 920px) {
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .connectorArrow {
+    display: none;
+  }
+}

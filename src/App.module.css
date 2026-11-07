@@ -1,0 +1,10 @@
+.appShell {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.foreground {
+  position: relative;
+  z-index: 2;
+}
